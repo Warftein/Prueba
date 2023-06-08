@@ -1,0 +1,182 @@
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+body,
+ul {
+  margin: 0;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0;
+}
+
+.container,
+h1 {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  display: flexbox;
+}
+
+.container,
+section {
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  padding: 10px;
+  font-size: 15px;
+  display: flexbox;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.container-nav {
+  display: flex;
+  padding: 25px;
+  height: 50px;
+  background-color: rgb(49, 47, 47);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+li > a {
+  padding: 8px 24px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+.button-menu-toggle {
+  display: none;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0 24px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav a:hover {
+  color: rgb(216, 209, 209);
+}
+
+.nav-links.nav-links-responsive {
+  position: absolute;
+  display: inline-block;
+  display: flex;
+  background-color: rgba(20, 20, 20, 0.95);
+  top: 100px;
+  right: 0;
+  flex-direction: column;
+  padding: 0;
+  align-items: flex-start;
+  font-size: 30px;
+  justify-content: flex-end;
+  gap: 10px;
+  width: max-content;
+  transform: translateX(10px);
+}
+
+.nav-links.nav-links-responsive a {
+  padding: 8px;
+  display: block;
+  text-align: left;
+  width: max-content;
+}
+
+.video-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    background-color: rgb(161, 118, 230);
+  }
+
+  nav {
+    font-size: 16px;
+  }
+
+  .column {
+    flex: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Estilos para pantallas aún más pequeñas */
+}
+
+@media screen and (max-width: 767px) {
+  .button-menu-toggle {
+    display: block;
+  }
+}
